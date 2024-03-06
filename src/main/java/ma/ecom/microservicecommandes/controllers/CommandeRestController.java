@@ -56,7 +56,7 @@ public class CommandeRestController implements HealthIndicator {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @DeleteMapping("/commandes/{id}")
+    @DeleteMapping("/commandescd microservice/{id}")
     public ResponseEntity<Commande> deleteCommande(@PathVariable Long id){
         Optional<Commande> optionalCommande = commandeRepository.findById(id);
         if(optionalCommande.isPresent()){

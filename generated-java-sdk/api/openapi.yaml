@@ -1,0 +1,159 @@
+openapi: 3.0.0
+info:
+  title: My API
+  version: 1.0.0
+servers:
+- description: commande Service
+  url: http://localhost:8090
+paths:
+  /commandes:
+    get:
+      description: Retrieve information about commandes.
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/_commandes_get_200_response_inner'
+                type: array
+          description: Successful response
+      summary: Get a list of commands
+      tags:
+      - commandes
+      x-accepts: application/json
+    post:
+      description: Add a new command to the list.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/_commandes_post_request'
+        required: true
+      responses:
+        "201":
+          description: Command created successfully
+        "400":
+          description: "Bad request, invalid input"
+      summary: Create a new command
+      tags:
+      - commandes
+      x-content-type: application/json
+      x-accepts: application/json
+  /commandes/{id}:
+    delete:
+      description: Remove a specific command.
+      parameters:
+      - description: ID of the command
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "204":
+          description: Command deleted successfully
+        "404":
+          description: Command not found
+      summary: Delete command by ID
+      tags:
+      - commandes
+      x-accepts: application/json
+    get:
+      description: Retrieve information about a specific command.
+      parameters:
+      - description: ID of the command
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/_commandes_get_200_response_inner'
+          description: Successful response
+        "404":
+          description: Command not found
+      summary: Get command by ID
+      tags:
+      - commandes
+      x-accepts: application/json
+    put:
+      description: Update information about a specific command.
+      parameters:
+      - description: ID of the command
+        explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/_commandes_post_request'
+        required: true
+      responses:
+        "200":
+          description: Successful response
+        "400":
+          description: "Bad request, invalid input"
+        "404":
+          description: Command not found
+      summary: Update command by ID
+      tags:
+      - commandes
+      x-content-type: application/json
+      x-accepts: application/json
+components:
+  schemas:
+    _commandes_post_request:
+      properties:
+        desc:
+          type: string
+        quantity:
+          format: int32
+          type: integer
+        date:
+          format: date
+          type: string
+        amount:
+          format: double
+          type: number
+      type: object
+    _commandes_get_200_response_inner:
+      example:
+        date: 2000-01-23
+        amount: 1.4658129805029452
+        quantity: 6
+        id: 0
+        desc: desc
+      properties:
+        id:
+          format: int64
+          type: integer
+        desc:
+          type: string
+        quantity:
+          format: int32
+          type: integer
+        date:
+          format: date
+          type: string
+        amount:
+          format: double
+          type: number
+      type: object
+
