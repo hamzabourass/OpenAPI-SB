@@ -17,7 +17,7 @@
 
 # Simple Tests for get and get by id using the SDK
 ![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/56dfb695-2638-4ed3-8171-e8bf12ecc31b)
-** Results **
+**Results**
 ![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/ac39858b-bd01-4797-9a17-bfb57b0f364a)
 
 
