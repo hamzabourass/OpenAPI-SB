@@ -17,15 +17,21 @@
 ![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/eb7a44cc-d557-4b51-8402-ae44f4593754)
 
 # Simple Tests for get and get by id using the SDK
-![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/56dfb695-2638-4ed3-8171-e8bf12ecc31b)
+
+**Setting up the default ApiClient configuration**
+ ![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/79b1705b-c85a-4c80-8b14-97959060e2fc)
+
+**Test case for get all commandes**
+ ![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/89a0690e-7d47-4fe0-bf1f-a45f73ed2256)
+
+**Test case for get command by id**
+![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/347863e9-090e-49dd-b7c9-ec54958f8c66)
 
 **Result for get all commandes**
-
-![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/bf45ad7d-6c96-4157-a2c1-8aca6457a880)
+ ![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/bf45ad7d-6c96-4157-a2c1-8aca6457a880)
 
 **Result for get commande by id**
-
-![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/b7df04a7-d6f8-4f3d-a970-98eb2e290c38)
+ ![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/b7df04a7-d6f8-4f3d-a970-98eb2e290c38)
 
 
 
