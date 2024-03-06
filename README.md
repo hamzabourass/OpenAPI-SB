@@ -13,6 +13,7 @@
 ![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/c426ad62-f914-49e0-99b3-c958057375df)
 
 # Generating the SDK and adding the dependency
+**You find the generated sdk doc in generated-java-sdk/docs**
 ![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/eb7a44cc-d557-4b51-8402-ae44f4593754)
 
 # Simple Tests for get and get by id using the SDK
