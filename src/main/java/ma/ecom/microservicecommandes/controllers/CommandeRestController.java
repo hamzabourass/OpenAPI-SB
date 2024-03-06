@@ -31,7 +31,7 @@ public class CommandeRestController implements HealthIndicator {
         return Lc.subList(0,configurationApp.getCommandes_last());
     }
 
-    @GetMapping("/commande/{id}")
+    @GetMapping("/commandes/{id}")
     public ResponseEntity<Commande> showCommande(@PathVariable Long id){
         Commande cmd;
         cmd = commandeRepository.findById(id).orElse(null);
@@ -41,7 +41,7 @@ public class CommandeRestController implements HealthIndicator {
         else
             return new ResponseEntity<>(cmd, HttpStatus.OK);
     }
-    @PutMapping("/modify/{id}")
+    @PutMapping("/commandes/{id}")
     public ResponseEntity<Commande> modifyCommande(@PathVariable Long id, @RequestBody Commande CommandeModifie){
         Optional<Commande> optionalCommande = commandeRepository.findById(id);
         if(optionalCommande.isPresent()){
@@ -56,7 +56,7 @@ public class CommandeRestController implements HealthIndicator {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/commandes/{id}")
     public ResponseEntity<Commande> deleteCommande(@PathVariable Long id){
         Optional<Commande> optionalCommande = commandeRepository.findById(id);
         if(optionalCommande.isPresent()){
