@@ -18,8 +18,17 @@
 
 # Simple Tests for get and get by id using the SDK
 ![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/56dfb695-2638-4ed3-8171-e8bf12ecc31b)
-**Results**
-![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/ac39858b-bd01-4797-9a17-bfb57b0f364a)
+
+**Result for get all commandes**
+
+![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/bf45ad7d-6c96-4157-a2c1-8aca6457a880)
+
+**Result for get commande by id**
+
+![image](https://github.com/hamzabourass/OpenAPI-SB/assets/105117343/b7df04a7-d6f8-4f3d-a970-98eb2e290c38)
+
+
+
 
 
 
